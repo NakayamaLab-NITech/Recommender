@@ -84,7 +84,7 @@
 
 ![image](https://github.com/NakayamaLab-NITech/Recommender/assets/102635361/040a28e3-759a-4780-baa7-ebded98a6c08)
 
-これらは下記に示す表のように出力されている。
+予測結果は下記に示す表のように出力されており、*after_predict_box* というディレクトリの中にも保管されている。
 
 |formula|this_Stability_percent|predict_number|Stability|probability class 0 (0-0.01 eV / atom) |probability class 1 (0.01-0.1 eV / atom) |probability class 2 (0.1- eV / atom)|
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|
