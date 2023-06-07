@@ -22,25 +22,70 @@
 
 <img width="855" alt="image" src="https://github.com/NakayamaLab-NITech/Recommender/assets/102635361/f39dd687-5264-4697-9922-2fab82e1dc4b">
 
-また、説明変数には中山研究室で開発されたヒストグラム記述子を用いています。詳しくは[中山研_ヒストグラム記述子][]
+また、説明変数には中山研究室で開発されたヒストグラム記述子を用いた。詳しくは [中山研_ヒストグラム記述子](https://github.com/NakayamaLab-NITech/composional-histogram-descriptor) を参照。
 
 上述したデータセットを 80% の訓練データと 20% のテストデータに分割した。訓練データで学習し、テストデータで分類精度を評価した。また、訓練データの中で、k分割交差検証法を用いたハイパーパラメータチューニングを行っており、汎用性の高いパラメータ探索に尽力した。
 
-4つの機械学習モデルを検証した中で、最も分類精度の高かった *RandomForest* を本スクリプトに掲載している。 *RandomForest* を用いた分類精度は **AUC = 0.88**, **正解率91%** を記録した。
+4つの機械学習モデルを検証した中で、最も分類精度の高かった *RandomForest* を本スクリプトに掲載している。 *RandomForest* を用いた分類精度は **AUC = 0.88**, **正解率91%** を記録した。（AUCは1を最高値とし、1に近づくにつれよい予測であるといえる）
 
 下図は最も精度の良かった *RandomForest* の ROC曲線である。顕著に左上に近づくカーブを描いており、予測精度が良いことが読み取れる。
 
 <img width="359" alt="画像11" src="https://github.com/NakayamaLab-NITech/Recommender/assets/102635361/863f64ff-1152-4f49-a16e-627011c23a01">
 
-
-
-
-
-
-
+本スクリプトでは、上述した *RandomForest* を学習済みモデルとし、使用する。
 
 ## 使用方法（Linux環境のみ対応しています）
+1.以下に示すディレクトリ構造を用意する。
+  * histgram_desc
 
+     ┣━ DefElem.csv
+     
+     ┗━ make_hist_in_ver5.py
+
+  * need_files
+     
+     ┣━ descript_list
+     
+     ┣━ descripter_table
+     
+     ┣━ histdef.dat
+     
+     ┣━ histgram_desc.py
+     
+     ┣━ mix_desc.py
+     
+     ┗━ model_fit.py
+     
+  * predict
+     
+     ┣━ RandomForest_model.pickle
+     
+     ┗━ list.dirname
+     
+  * Recommender.py
+
+2.  `python Recommender.py 〇 〇 〇` と入力する。〇 には安定性を知りたい組成式を入力（Li2O MgO FeO など...）
+    
+    組成式に数の制限はないためスペース区切りでいくつもの元素を一度に予測できる
+    
+    ※注意点
+    
+    * python3.8 ~ 3.10 にのみ対応しているため、バージョンの確認が必要
+    
 
 ## 結果の確認方法
+まず、出力の上部について確認する。下図に実際に入力した際の出力を示す。
 
+初めに入力した組成式の確認があり、その後説明変数がどのような形なのかを表示している。また、次に表示されているデータフレームは先述した中山研のヒストグラム記述子を示している。
+
+<img width="829" alt="image" src="https://github.com/NakayamaLab-NITech/Recommender/assets/102635361/20945844-43c2-43ac-a830-a4e10c434b70">
+
+次に、実際に予測結果が出力される。
+
+
+
+
+
+## ライセンス、引用について (License, Citing)
+**ライセンス(About License)**　This software is released under the MIT License, see the LICENSE.
+**引用先(Citing)**
