@@ -80,10 +80,17 @@
 
 <img width="829" alt="image" src="https://github.com/NakayamaLab-NITech/Recommender/assets/102635361/20945844-43c2-43ac-a830-a4e10c434b70">
 
-次に、実際に予測結果が出力される。
+次に、実際に予測結果が下図のように出力される。
 
+![image](https://github.com/NakayamaLab-NITech/Recommender/assets/102635361/040a28e3-759a-4780-baa7-ebded98a6c08)
 
+これらは下記に示す表のように出力されている。
 
+|formula|this_Stability_percent|predict_number|Stability|probability class 0 (0-0.01 eV / atom) |probability class 1 (0.01-0.1 eV / atom) |probability class 2 (0.1- eV / atom)|
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|入力した化学組成|安定性を選んだ際の確率|予測したクラス名|安定性|クラス0の確率（安定と判断した確率）|クラス1の確率（準安定と判断した確率）|クラス2の確率（不安定と判断した確率）|
+
+これらから入力した化学組成が合成可能かの予測結果を確認でき、実際に合成をする際に判断する材料の一つに数えられる。
 
 
 ## ライセンス、引用について (License, Citing)
