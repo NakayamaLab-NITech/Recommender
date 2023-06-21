@@ -58,13 +58,20 @@
      
   * predict
      
-     ┣━ RandomForest_model.pickle
+     ┣━ * **RandomForest_model.pickle**
      
      ┗━ list.dirname
      
   * Recommender.py
 
-2.  `python Recommender.py 〇 〇 〇` と入力する。〇 には安定性を知りたい組成式を入力（Li2O MgO FeO など...）
+2. ここで predict 内の RandomForest_model.pickle はファイルサイズが大きく、別の方法で取得します。
+   以下のようなコマンドで、DropBox 内にある pickle ファイルを取得します。
+   
+   `wget https://www.dropbox.com/s/qsvewtf2o6en5df/RandomForest_model.pickle`
+
+   取得した pickle ファイルを predict 内において準備完了となります。
+
+4.  `python Recommender.py 〇 〇 〇` と入力する。〇 には安定性を知りたい組成式を入力（Li2O MgO FeO など...）
     
     組成式に数の制限はないためスペース区切りでいくつもの元素を一度に予測できる
     
