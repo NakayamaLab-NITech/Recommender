@@ -99,6 +99,9 @@
 
 これらから入力した化学組成が合成可能かの予測結果を確認でき、実際に合成をする際に判断する材料の一つに数えられる。
 
+## Funding
+科研費  19H05815, 20H02436
+
 
 ## ライセンス、引用について (License, Citing)
 **ライセンス(About License)**　This software is released under the MIT License, see the LICENSE.
