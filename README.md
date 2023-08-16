@@ -104,9 +104,8 @@
 **ライセンス(About License)**  
 This software is released under the MIT License, see the LICENSE.  
 **引用先(Citing)**  
-T. Atsumi, K. Sato, Y. Yamaguchi, M. Hamaie, R. Yasuda, N. Tanibata, H. Takeda, M. Nakayama, M. Karasuyama, I. Takeuchi, "Chemical composition data-driven machine-learning prediction for phase stability and materials properties of inorganic crystalline solids", Phys. Stat. Sol. B, 259, 2100525 (2022)  [DOI: 10.1002/pssb.202100525](https://doi.org/10.1002/pssb.202100525)
-
-**Funding**
+T. Atsumi, K. Sato, Y. Yamaguchi, M. Hamaie, R. Yasuda, N. Tanibata, H. Takeda, M. Nakayama, M. Karasuyama, I. Takeuchi, "Chemical composition data-driven machine-learning prediction for phase stability and materials properties of inorganic crystalline solids", Phys. Stat. Sol. B, 259, 2100525 (2022)  [DOI: 10.1002/pssb.202100525](https://doi.org/10.1002/pssb.202100525)  
+**Funding**  
 科研費  19H05815, 20H02436
 
 
