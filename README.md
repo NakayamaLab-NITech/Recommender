@@ -65,9 +65,9 @@
   * Recommender.py
 
 2. ここで predict 内の RandomForest_model.pickle はファイルサイズが大きく、別の方法で取得します。
-   以下のようなコマンドで、DropBox 内にある pickle ファイルを取得します。
+   以下のようなコマンドで、Figshare 内にある pickle ファイルを取得します(DOI: 10.6084/m9.figshare.26537722)。
    
-   `wget https://www.dropbox.com/s/qsvewtf2o6en5df/RandomForest_model.pickle`
+   `wget https://figshare.com/ndownloader/files/48346417?private_link=4d1aac8d2c4ed1ab875a`
 
    取得した pickle ファイルを predict 内において準備完了となります。
 
